@@ -28,7 +28,7 @@ export default function SearchCard({ id, name, protein, carbohydrate, fat, unit 
             <span>Fat: {fat}{unit}</span>
             <div className={styles.UserSelectionDiv}>
                 <input type="number" placeholder="Quantity" onChange={onQuantityChange}/>
-                <input type="datetime-local" placeholder="Date" max={currentDate} onChange={onDateChange}/>
+                <input type="date" placeholder="Date" max={currentDate} onChange={onDateChange}/>
                 <button className={styles.UserSelectionButton} onClick={onAddClick}>Add</button>
             </div>
             <span className={styles.ErrorMessage}>{errors}</span>

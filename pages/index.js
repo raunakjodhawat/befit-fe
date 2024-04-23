@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from './landing.module.css';
+import './index.css';
 import SignInForm from './signin/index';
 import SignUpForm from './signup';
 export default function LandingPage() {

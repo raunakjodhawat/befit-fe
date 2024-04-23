@@ -1,0 +1,40 @@
+.card {
+    background-color: #bdb5d0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.card span:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card span:not(:first-child) {
+    font-size: 14px;
+}
+
+.UserSelectionDiv {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-template-areas: ". . .";
+}
+
+.UserSelectionButton {
+    border: 0;
+    background: green;
+    border-radius: 10px;
+}
+.ErrorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

@@ -18,7 +18,7 @@ export default function LoginRedirector() {
               });
               if (!response.ok) {
                 setIsUserLoggedIn(false);
-                router.push('/'); // Redirect to / route
+                // router.push('/'); // Redirect to / route
               } else {
                 setIsUserLoggedIn(true);
               }

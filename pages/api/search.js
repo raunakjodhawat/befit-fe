@@ -2,7 +2,6 @@
 export default class SearchSocket {
     constructor(wsHost, url, path) {
         this.url = wsHost + url + path + "/search/ws";
-        console.log(process.env);
         this.socket = new WebSocket(this.url);
         this.serverResponse = [{}];
         // Bind event handlers to the instance to maintain the correct context
@@ -25,7 +24,6 @@ export default class SearchSocket {
     
         onMessage(event) {
             // Handle WebSocket message event
-            // console.log(event.data);
             try {
                 this.serverResponse = JSON.parse(event.data);
             } catch (e) {

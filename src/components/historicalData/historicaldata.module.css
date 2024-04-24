@@ -1,0 +1,11 @@
+.HistorySlider {
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 0.25fr;
+    gap: 0px 20px;
+    grid-template-areas: ". . .";
+    margin: 20px;
+}
+
+.HistorySlider p {
+    justify-self: center;
+}

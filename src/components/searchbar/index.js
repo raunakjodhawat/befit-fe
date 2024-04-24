@@ -7,7 +7,6 @@ const socket = new SearchSocket("ws://", "localhost:8080", "/api/v1");
 export default function SearchBar() {
     useEffect(() => {
         return () => {
-            console.log("closing socket connection from client");
             socket.socket.close();
         }
     }, []);
@@ -27,12 +26,12 @@ export default function SearchBar() {
         fat: 0,
         unit: "some-unit"
     }]);
-    // socket.onOpen = (e) => {
-    //     console.log("socket is open");
-    // }
-    // socket.onMessage = (e) => {
-    //     console.log("received something from seever", e);
-    // }
+    socket.onOpen = (e) => {
+        console.log("socket is open");
+    }
+    socket.onMessage = (e) => {
+        console.log("received something from seever", e);
+    }
     function onInput(e) {
         socket.send(e.target.value);
         setSearchResults(socket.serverResponse);

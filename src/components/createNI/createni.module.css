@@ -1,0 +1,22 @@
+.CreateNIDiv {
+    display: grid;
+    grid-template-columns: 0.1fr;
+}
+
+.CreateNiDivSmallInput {
+    display: flex;
+    margin: 2px;
+}
+
+.CreateNiDivSmallInput input {
+    margin: 10px;
+}
+.CreateNIDiv button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #6b5b95;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

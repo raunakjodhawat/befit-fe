@@ -1,0 +1,42 @@
+.TargetHeaderContainerDiv {
+    border-radius: 100px;
+    background-color: antiquewhite;
+    margin: 10px;
+    padding: 10px;
+}
+
+.TargetHeader {
+    margin: 0;
+    color: #6b5b95;
+    padding: 10px 25px;
+    font-size: 0.9em;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.TargetInput {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-template-areas: ". . . .";
+    height: 30px;
+}
+
+.TargetInput label {
+    margin: 0;
+    color: #7246e3;
+    padding: 10px 25px;
+    font-size: 0.9em;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.TargetInput button {
+    background-color: #6b5b95;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+}

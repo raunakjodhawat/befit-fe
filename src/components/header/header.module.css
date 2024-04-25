@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    display: flex;
 }
 
 .HeaderText {
@@ -21,7 +22,6 @@
 }
 
 .HeaderLogoutButton {
-    margin-left: 80%;
     background-color: #fe5e5e;
     color: white;
     border: none;
@@ -30,4 +30,5 @@
     padding: 5px 70px;
     font-size: 0.8em;
     font-weight: 500;
+    margin-left: auto;
 }
